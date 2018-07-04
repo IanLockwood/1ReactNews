@@ -4,6 +4,39 @@
   padding-bottom: 10px;
 }
 
+.SearchInput,
+.SearchSort,
+.SearchButton {
+  float: left;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+
 .SearchInput {
-  height: 25px;
+  height: 33px;
+  width: calc(100% - 280px);
+  float: left;
+  background: #313131;
+  padding-left: 10px;
+}
+
+.SearchInput::placeholder {
+  color: white;
+}
+
+.SearchSort {
+  height: 35px;
+  width: 120px;
+  margin-left: 10px;
+  float: left;
+  background: #313131;
+}
+
+.SearchButton {
+  height: 35px;
+  width: 120px;
+  margin-left: 10px;
+  float: left;
+  background: #e71d36;
 }
