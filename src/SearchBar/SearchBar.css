@@ -1,12 +1,12 @@
-.SearchBar {
+#SearchBar {
   background: #454545;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.SearchInput,
-.SearchSort,
-.SearchButton {
+#SearchInput,
+#SearchSort,
+#SearchButton {
   float: left;
   border-radius: 3px;
   border: none;
@@ -15,7 +15,7 @@
   margin-right: 10px;
 }
 
-.SearchInput {
+#SearchInput {
   height: 33px;
   width: calc(100% - 30px);
   float: left;
@@ -24,11 +24,11 @@
   margin-bottom: 10px;
 }
 
-.SearchInput::placeholder {
+#SearchInput::placeholder {
   color: white;
 }
 
-.SearchSort {
+#SearchSort {
   height: 35px;
   width: calc(100% - 20px);
   margin-bottom: 10px;
@@ -36,7 +36,7 @@
   background: #313131;
 }
 
-.SearchButton {
+#SearchButton {
   height: 35px;
   width: calc(100% - 20px);
   float: left;
@@ -44,21 +44,21 @@
 }
 
 @media (min-width: 800px) {
-  .SearchInput {
+  #SearchInput {
     width: calc(100% - 290px);
     margin-left: 10px;
     margin-bottom: 0;
     margin-right: 0;
   }
 
-  .SearchSort {
+  #SearchSort {
     width: 120px;
     margin-left: 10px;
     margin-bottom: 0;
     margin-right: 0;
   }
 
-  .SearchButton {
+  #SearchButton {
     width: 120px;
     margin-left: 10px;
     margin-right: 0;

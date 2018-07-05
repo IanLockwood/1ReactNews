@@ -1,7 +1,9 @@
 Reminder - talk about responsiveness, choice of everything source instead of top headlines.
+
+Reminder 2 - talk about fixes on sort and nothing and how newsapi thinks publishedat is their default but it's actually bad relevancy
 ___
 
-[Powered by News API](https://newsapi.org)
+This project is [Powered by News API](https://newsapi.org).
 
 ___
 

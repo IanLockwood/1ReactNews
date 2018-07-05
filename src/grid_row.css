@@ -8,6 +8,18 @@
     width: calc(100% - 80px);
   }
 }
+@media (min-width: 1300px) {
+  .grid-row {
+    padding: 0 10%;
+    width: 80%;
+  }
+}
+@media (min-width: 2000px) {
+  .grid-row {
+    padding: 0 20%;
+    width: 60%;
+  }
+}
 .grid-row:after {
   display: table;
   clear: both;

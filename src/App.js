@@ -11,23 +11,32 @@ class App extends Component {
     super(props);
 
     this.state = {
-      query: "q=technology&",
+      query: "",
       sort: "",
       articles: []
     }
 
     this.setArticles = this.setArticles.bind(this);
+    this.setQueryAndSort = this.setQueryAndSort.bind(this);
   }
 
   setArticles() {
     let self = this;
     getArticles(this.state.query, this.state.sort)
       .then(function(newArticles) {
-        console.log(newArticles);
         self.setState({
           articles: newArticles
         })
       })
+  }
+
+  setQueryAndSort(newQuery, newSort) {
+    this.setState({
+      query: newQuery,
+      sort: newSort
+    }, function() {
+      this.setArticles();
+    })
   }
 
   componentDidMount() {
@@ -37,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <SearchBar />
+        <SearchBar setQueryAndSort={this.setQueryAndSort} />
         <Article articlesArray={this.state.articles} />
       </div>
     );

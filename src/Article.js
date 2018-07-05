@@ -8,9 +8,9 @@ export class Article extends Component {
     return(
       <div className="ArticleList grid-row">
         { this.props.articlesArray.map((article, index) =>
-          <div key={article + index} className="article col-8-mobile col-4-desktop">
+          <div key={article.title + index} className="article col-8-mobile col-4-desktop">
             <div className="article-image-container">
-              <img className="article-image" src={ article.urlToImage || stockNewsImage } />
+              <img className="article-image" src={ article.urlToImage || stockNewsImage } alt={article.title} />
             </div>
             <div className="article-content-container">
               <h2 className="article-title">{ article.title }</h2>

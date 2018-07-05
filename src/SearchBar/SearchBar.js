@@ -5,12 +5,24 @@ import { SearchButton } from './SearchButton';
 import './SearchBar.css';
 
 export class SearchBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick(e) {
+    const currentQuery = (document.getElementById("SearchInput").value);
+    const currentSort = document.getElementById("SearchSort").value;
+    this.props.setQueryAndSort(currentQuery, currentSort);
+  }
+
   render() {
     return (
-      <div className="grid-row SearchBar">
+      <div className="grid-row" id="SearchBar">
         <SearchInput />
         <SearchSort />
-        <SearchButton />
+        <SearchButton handleButtonClick={this.handleButtonClick} />
       </div>
     );
   }
