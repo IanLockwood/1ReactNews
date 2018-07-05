@@ -42,7 +42,7 @@ One more thing: in this process I actually caught a bug in NewsAPI! They say the
 
 ___
 
-Thanks for reading! Again, I really enjoyed this project, I learned a lot, and I'm very happy with how it came out.
+Thanks for reading! I really enjoyed this project, I learned a lot, and I'm very happy with how it came out.
 
 -Ian Lockwood
 
