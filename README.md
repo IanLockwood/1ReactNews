@@ -6,7 +6,7 @@ ___
 
 ## Project Notes
 
-This was a fun project, and I learned a lot! I should mention that I spent about 8 hours on this project, but I added about 4 hours of time with extra research, detail work that I wasn't asked to do, some humble mobile and super-large-screen responsiveness, and accounting for some weird cases and errors with NewsAPI (detailed below).
+This was a fun project, and I learned a lot! I spent about 8 hours on this project, but I added about 4 hours of time with extra research, detail work that I wasn't asked to do, some humble mobile and super-large-screen responsiveness, and accounting for some weird cases and errors with NewsAPI (detailed below).
 
 
 ### Some weird NewsAPI stuff
@@ -43,6 +43,7 @@ One more thing: in this process I actually caught a bug in NewsAPI! They say the
 ___
 
 Thanks for reading! Again, I really enjoyed this project, I learned a lot, and I'm very happy with how it came out.
+
 -Ian Lockwood
 
 ___
