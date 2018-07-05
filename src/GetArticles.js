@@ -12,6 +12,7 @@ export async function getArticles(query, sort) {
   }
 
   if (query === "" && sort === "") {
+    // fix for "too broad" error when neither sorting nor querying
     requestURL = topHeadlineURL;
   } else if (query === "") {
     // fix for "too broad" error when using sortBy alone.

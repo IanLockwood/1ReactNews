@@ -5,7 +5,7 @@ import { SearchBar } from './SearchBar/SearchBar';
 import { Article } from './Article';
 import { getArticles } from './GetArticles';
 
-
+// Stateful parent component (all other components are stateless children)
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +20,7 @@ class App extends Component {
     this.setQueryAndSort = this.setQueryAndSort.bind(this);
   }
 
+  // Calls getArticles, which requests articles from NewsAPI, then updates articles in state
   setArticles() {
     let self = this;
     getArticles(this.state.query, this.state.sort)
@@ -30,6 +31,7 @@ class App extends Component {
       })
   }
 
+  // Updates query and sort in state, which then triggers an update to articles
   setQueryAndSort(newQuery, newSort) {
     this.setState({
       query: newQuery,
@@ -39,6 +41,7 @@ class App extends Component {
     })
   }
 
+  // Populates articles on the initial load
   componentDidMount() {
     this.setArticles();
   }

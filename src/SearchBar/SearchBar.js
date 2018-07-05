@@ -11,6 +11,7 @@ export class SearchBar extends Component {
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
+  // Scrapes the typed query and selected sort and sends it up to the stateful parent
   handleButtonClick(e) {
     const currentQuery = (document.getElementById("SearchInput").value);
     const currentSort = document.getElementById("SearchSort").value;

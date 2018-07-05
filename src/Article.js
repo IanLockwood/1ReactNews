@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Article.css';
 
+// Stock image of newspapers, in case an article has no image
 const stockNewsImage = "http://mediad.publicbroadcasting.net/p/michigan/files/styles/x_large/public/201601/newspaper_flickr_jon_s.jpg";
 
 export class Article extends Component {
