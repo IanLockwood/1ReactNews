@@ -6,7 +6,7 @@ ___
 
 ## Project Notes
 
-This was a fun project, and I learned a lot! I should mention that I spent about 8 hours on this project, but I added about 4 hours of time with extra research, detail work that I wasn''t asked to do, some humble mobile and super-large-screen responsiveness, and accounting for some weird cases and errors with NewsAPI (detailed below).
+This was a fun project, and I learned a lot! I should mention that I spent about 8 hours on this project, but I added about 4 hours of time with extra research, detail work that I wasn't asked to do, some humble mobile and super-large-screen responsiveness, and accounting for some weird cases and errors with NewsAPI (detailed below).
 
 
 ### Some weird NewsAPI stuff
@@ -31,13 +31,19 @@ One more thing: in this process I actually caught a bug in NewsAPI! They say the
 * The project was really interesting and I had a lot of fun! Any time I used something I was unfamiliar with, I had a great time digging into extra research.
 
 
-### Things that need impovement
+### Things that need improvement
 
 * I went a bit over time (even taking away the extra work, I came in about an hour over).
 
 * In `App.js`, I think my implementation of repopulating the articles is a bit too chunky, and relies a little bit too much on promises. I'd love some feedback on this!
 
 * My current solution is a slightly bloated because I update the query and sort in `state` unnecessarily. I currently grab the query and sort from their respective fields, send them to state, and then run the `setArticles` method using `this.state.query` and `this.state.sort` as params, when I could just grab the query and sort and send those directly to the `setArticles` method. My thinking was that you'd want to hold the query and sort in `state` for a more complex implementation, as this is a pretty lightweight project. But I think there may be a better/lighter implementation that does depend on `this.state.query` and `this.state.sort` that's eluding me.
+
+
+___
+
+Thanks for reading! Again, I really enjoyed this project, I learned a lot, and I'm very happy with how it came out.
+-Ian Lockwood
 
 ___
 
