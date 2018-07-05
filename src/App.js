@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './grid_row.css';
 import { SearchBar } from './SearchBar/SearchBar';
-import { getArticles } from './GetArticles.js';
+import { Article } from './Article';
+import { getArticles } from './GetArticles';
 
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      query: "q=apple&",
+      query: "q=technology&",
       sort: "",
       articles: []
     }
@@ -35,7 +36,10 @@ class App extends Component {
 
   render() {
     return (
-      <SearchBar />
+      <div>
+        <SearchBar />
+        <Article articlesArray={this.state.articles} />
+      </div>
     );
   }
 }

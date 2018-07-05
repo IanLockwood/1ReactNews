@@ -11,14 +11,17 @@
   border-radius: 3px;
   border: none;
   color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .SearchInput {
   height: 33px;
-  width: calc(100% - 280px);
+  width: calc(100% - 30px);
   float: left;
   background: #313131;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .SearchInput::placeholder {
@@ -27,16 +30,37 @@
 
 .SearchSort {
   height: 35px;
-  width: 120px;
-  margin-left: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
   float: left;
   background: #313131;
 }
 
 .SearchButton {
   height: 35px;
-  width: 120px;
-  margin-left: 10px;
+  width: calc(100% - 20px);
   float: left;
   background: #e71d36;
+}
+
+@media (min-width: 800px) {
+  .SearchInput {
+    width: calc(100% - 290px);
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .SearchSort {
+    width: 120px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .SearchButton {
+    width: 120px;
+    margin-left: 10px;
+    margin-right: 0;
+  }
 }
